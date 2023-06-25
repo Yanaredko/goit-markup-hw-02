@@ -6,211 +6,190 @@
     --background-color-dark: #2E2F42;
     --background-color-cloud: #F4F4FD;
     --link-color-change: #404bbf;
+}
+
 body {
-    background-color: white;
-    color: #434455;
     font-family: 'Roboto', sans-serif;
+    color: #434455;
+    background-color: var(--background-color-main);
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.32px;
-    font-family: "Roboto", sans-serif;
-
 }
+
 .logo {
-    color: var(--accent-color);
-    font-family: Raleway, sans-serif;
-    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
     font-weight: 800;
+    font-size: 18px;
     line-height: 1.17;
-    letter-spacing: 0.54px;
+    letter-spacing: 0.03em;
     text-transform: uppercase;
+    color: var(--accent-color);
+}
+.logo.link {
+    text-decoration: none;
 }
 
 .second-part {
     color: var(--title-text-color);
-    z-index: 1;
-}
-
-.first-part::after {
-    content: attr(data-text);
-    color: var(--primary-text-color);
-    z-index: -1;
-}
-
-.logo.link {
-text-decoration: none;
 }
 
 .logo:hover {
     color: var(--accent-color);
 }
 
-ul {
-    list-style: none;
-}
-list{
-    list-style: none;
-    font-family: Roboto sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.32px;
-}
-.list .link {
-    color: var(--title-text-color);
+.link {
     text-decoration: none;
 }
-.list .link:hover,
-.list .link:focus {
-    color: var(--link-color-change);
+.list {
+    list-style: none;
+}
+
+.first-page.link.current:hover,
+.first-page.link.current:focus {
+    color: #404bbf;
 }
 .list .link.current {
     color:var(--link-color-change)
 }
-.list .first-page {
+.first-page.link.current {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--title-text-color);
 }
-.link {
-    text-decoration: none;
-}
 
-.address {
+.address.list {
     font-style: normal;
-    font-family: Roboto sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.32px;
 }
-
-.address .email,
-.address .telephone-num {
+.link.link.email {
+    line-height: 1.5;
+    letter-spacing: 0.02em;
     color: var(--primary-text-color);
 }
-.address .email:hover,
-.address .telephone-num:hover {
-    color: var(--link-color-change);
+.link.link.email:hover,
+.link.link.email:focus {
+    color: #404bbf;
 }
-
-.headline {
-    background-color: var(--background-color-dark);
+.headline { 
+    background-color: var(--title-text-color);
 }
-
-h1 {
-    color: white;
+.headline-title {
     font-size: 56px;
-    font-weight: 700;
     line-height: 1.07;
-    letter-spacing: 1.12px;
+    font-weight: 700;
     text-align: center;
-}
-.button {
+    letter-spacing: 0.02em;
     color: white;
-    background-color: var(--accent-color);
-    font-size: 16px;
+}
+.button.primary {
+    background-color: #4D5AE5;
+    font-family: 'Roboto', sans-serif;
     font-weight: 500;
+    font-size: 16px;
     line-height: 1.5;
-    letter-spacing: 0.64px;
-    font-family: "Roboto", sans-serif;
+    letter-spacing: 0.04em;
+    color: white;
     cursor: pointer;
 }
-.button:hover,
-.button:focus {
-    background-color: var(--link-color-change);
+.button.primary:hover,
+.button.primary:focus {
+    background-color: #404BBF;
 }
-
+.adv-table.list {
+    list-style: none;
+}
 .adv-title {
     visibility: hidden;
 }
-.section-title {
-    color: var(--title-text-color);
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 1.11;
-    letter-spacing: 0.72px;
-    text-transform: capitalize;
-    text-align: center;
-}
-h3 {
-    color: var(--title-text-color);
-    font-size: 20px;
+.adv-table-title {
     font-weight: 500;
+    font-size: 20px;
     line-height: 1.2;
-    letter-spacing: 0.4px;
+    letter-spacing: 0.02em;
+    color: var(--title-text-color)
+}
+.adv-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
+}
+.section-title {
+    font-size: 36px;
+    line-height: 1.11;
+    color: var(--title-text-color);
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    font-weight: 700;
+    color: var(--title-text-color);  
 }
 .section-team {
-    background-color: var(--background-color-cloud);
+    background-color: #F4F4FD;
 }
 .section-title-team {
     font-size: 36px;
-    font-weight: 700;
     line-height: 1.11;
-    letter-spacing: 0.72px;
-    text-transform: capitalize;
     text-align: center;
-    color: var(--background-color-dark)
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--title-text-color);
 }
-
-.list-img {
-    background: #ffffff;
+.section-img-team {
+    background-color: #FFFFFF;
 }
-
+.list-heading {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--title-text-color);
+}
 .list-text {
-    font-size: 16px
+    font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
 }
 
-footer {
-    background-color: var(--background-color-dark);
-}
-.footer-second-part {
-    color: var(--background-color-cloud);
-    z-index: 1;
+.page-footer {
+    background-color: var(--title-text-color);
 }
 
-footer>p {
-    color: var(--background-color-cloud);
+.footer-second-part {
+    color: #f4f4fd;
 }
 
 .slogan {
-    line-height: 1.5
-    letter-spacing: 0.02em
+    line-height: 1.5;
+    color: var(--background-color-cloud);
+    letter-spacing: 0.02em;
 }
 
 /* Page Portfolio*/
 
-.button-portfolio {
-    color: var(--accent-color);
-    background-color: var(--background-color-cloud);
-    font-weight: 500;
-    letter-spacing: 0.64px;
-    text-align: center;
-
-}
-
-.button-portfolio:hover,
-.button-portfolio:focus {
-    color: var(--title-text-color);
-}
 
 .button-portfolio.all {
-    color: var(--accent-color);
-    background-color: var(--background-color-cloud);
     font-family: "Roboto", sans-serif;
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
+    color: var(--accent-color);
+    background-color: var(--background-color-cloud);
     cursor: pointer;
 }
 
 .button-portfolio.all:hover,
 .button-portfolio.all:focus {
     color: white;
+    background-color: #404BBF;
 }
 
 .link-title {
@@ -219,5 +198,14 @@ footer>p {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color:var(--background-color-dark);
+}
 
+.list .link {
+    text-decoration: none;
+}
+.link-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
 }
