@@ -24,7 +24,8 @@ body {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #4d5ae5;
+
+    color: var(--accent-color);
 }
 .logo.link {
     text-decoration: none;
@@ -181,7 +182,8 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    color: #4d5ae5;
+    
+    color: var(--accent-color);
     background-color: var(--background-color-cloud);
     cursor: pointer;
 }
